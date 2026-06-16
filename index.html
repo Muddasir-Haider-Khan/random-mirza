@@ -3,62 +3,215 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Random Mirza | Official Website</title>
-  <meta name="description" content="Official website of Random Mirza. The tour Mirza Ki Mehfil is coming soon. Subscribe for updates.">
+  <title>Mirza Ki Mehfil — Random Mirza | Live Tour 2026</title>
+  <meta name="description" content="Random Mirza presents Mirza Ki Mehfil — an intimate evening of poetry & sound, touring Pakistan 2026. Lahore tickets live now. Multan · Islamabad · Karachi coming soon.">
+  <meta name="theme-color" content="#0a0608">
   <link rel="icon" type="image/png" href="assets/images/Font-PNG.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mirza Ki Mehfil — Live Tour 2026">
+  <meta property="og:description" content="An intimate evening of poetry & sound. Touring Pakistan, 2026.">
+  <meta property="og:image" content="assets/images/mirza-hero.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preload" as="image" href="assets/images/mirza-hero-mobile.jpg">
   <link rel="stylesheet" href="css/styles.css">
-  <!-- FontAwesome for social icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body style="background: linear-gradient(rgba(0,0,0,0.85), rgba(8,8,10,0.95)), url('assets/images/705988744_17906838147421593_311165826440647631_n.jpg') no-repeat center center fixed; background-size: cover;">
+<body>
 
-  <!-- Decorative blur circles -->
-  <div style="position: absolute; top: 10%; left: 10%; width: 300px; height: 300px; background: rgba(197, 168, 128, 0.05); filter: blur(100px); pointer-events: none; z-index: 2;"></div>
-  <div style="position: absolute; bottom: 10%; right: 10%; width: 400px; height: 400px; background: rgba(197, 168, 128, 0.03); filter: blur(120px); pointer-events: none; z-index: 2;"></div>
+  <a href="#top" class="skip-link">Skip to content</a>
 
-  <main class="coming-soon-main">
-    <div class="coming-soon-card">
-      <div class="cs-brand">RANDOM MIRZA</div>
-      <h1 class="cs-title">MIRZA KI MEHFIL</h1>
-      <p class="cs-desc">The official tour schedule is here. We are setting up the main portal. The mehfil begins soon.</p>
+  <!-- Reusable SVG symbols -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></symbol>
+    <symbol id="flag-pk" viewBox="0 0 3 2"><rect width="3" height="2" fill="#01411C"/><rect width="1" height="2" fill="#fff"/><circle cx="1.8" cy="1" r="0.45" fill="#fff"/><circle cx="1.92" cy="0.92" r="0.45" fill="#01411C"/><polygon points="1.95,0.7 2.05,0.85 2.22,0.85 2.08,0.95 2.13,1.12 1.95,1.02 1.77,1.12 1.82,0.95 1.68,0.85 1.85,0.85" fill="#fff"/></symbol>
+  </svg>
 
-      <!-- Countdown -->
-      <div class="countdown-container">
-        <div class="countdown-box">
-          <div id="days" class="countdown-value">00</div>
-          <div class="countdown-label">Days</div>
-        </div>
-        <div class="countdown-box">
-          <div id="hours" class="countdown-value">00</div>
-          <div class="countdown-label">Hrs</div>
-        </div>
-        <div class="countdown-box">
-          <div id="minutes" class="countdown-value">00</div>
-          <div class="countdown-label">Min</div>
-        </div>
-        <div class="countdown-box">
-          <div id="seconds" class="countdown-value">00</div>
-          <div class="countdown-label">Sec</div>
-        </div>
-      </div>
-
-      <!-- Secret portals/social links -->
-      <div class="cs-tours-teaser">
-        <p>Looking for show dates? <a href="Mirzakimehfil/">View Tour Schedule</a></p>
-      </div>
-
-      <!-- Social Links -->
-      <div class="social-icons" style="justify-content: center; margin-top: 2.5rem;">
-        <a href="https://www.instagram.com/random_mirza_/" target="_blank" class="social-icon-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      </div>
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="wrap header-inner">
+      <a href="#top" class="brand" aria-label="Mirza Ki Mehfil — home">
+        <img src="assets/images/Font-PNG.png" alt="" aria-hidden="true">
+      </a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="#top" class="nav-link" aria-current="page">Home</a>
+        <a href="#countdown" class="nav-link">Countdown</a>
+        <a href="Mirzakimehfil/" class="nav-link">Schedule</a>
+        <a href="#gallery" class="nav-link">Mehfil</a>
+        <a href="https://ticketwala.pk/event/mirza-ki-mahfil-by-socialites-society-6145" target="_blank" rel="noopener" class="btn btn-primary" style="min-height:42px;padding:0.6rem 1.3rem;">Tickets</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMobile">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile">
+    <a href="#top">Home</a>
+    <a href="#countdown">Countdown</a>
+    <a href="Mirzakimehfil/">Schedule</a>
+    <a href="#gallery">Mehfil</a>
+    <a href="https://ticketwala.pk/event/mirza-ki-mahfil-by-socialites-society-6145" target="_blank" rel="noopener" class="btn btn-primary">Get Tickets</a>
+  </nav>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Mirza Ki Mehfil">
+      <div class="hero-media">
+        <div class="duo" style="position:absolute;inset:0;">
+          <img class="hero-mobile-img" src="assets/images/mirza-hero-mobile.jpg" width="820" height="1093" alt="Random Mirza performing at the mehfil, mid-song with one hand raised" fetchpriority="high">
+          <img class="hero-desktop-img" src="assets/images/mirza-hero.jpg" width="1400" height="1867" alt="" aria-hidden="true">
+        </div>
+      </div>
+
+      <div class="wrap hero-content">
+        <div class="hero-kicker">
+          <svg class="bolt" aria-hidden="true"><use href="#bolt"/></svg>
+          <span class="kicker">Random Mirza Presents</span>
+        </div>
+        <h1 class="hero-title">Mirza<span class="line-2">Ki Mehfil</span></h1>
+        <div class="hero-urdu" aria-hidden="true">مرزا کی محفل</div>
+        <p class="hero-sub">An intimate evening of poetry &amp; sound — the mehfil returns, touring Pakistan through 2026.</p>
+        <div class="hero-meta">
+          <span>Jul 25, 2026</span><span class="dot"></span>
+          <span>The Social House, Lahore</span>
+        </div>
+        <div class="hero-cta">
+          <a href="https://ticketwala.pk/event/mirza-ki-mahfil-by-socialites-society-6145" target="_blank" rel="noopener" class="btn btn-primary">Get Tickets</a>
+          <a href="Mirzakimehfil/" class="btn btn-outline">Full Schedule</a>
+        </div>
+      </div>
+
+      <a href="#countdown" class="scroll-cue" aria-label="Scroll to countdown">
+        <span>Scroll</span><span class="line"></span>
+      </a>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="section countdown" id="countdown">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="kicker">The mehfil begins in</span>
+          <h2 class="section-title" style="margin-top:0.7rem;">Curtain <em>Up</em></h2>
+          <p class="countdown-sub">Opening night — The Social House, Lahore · 25 July 2026</p>
+        </div>
+        <div class="countdown-grid reveal" id="countdown-grid" role="timer" aria-live="off">
+          <div class="count-box"><div class="count-num" id="days">00</div><div class="count-label">Days</div></div>
+          <div class="count-box"><div class="count-num" id="hours">00</div><div class="count-label">Hours</div></div>
+          <div class="count-box"><div class="count-num" id="minutes">00</div><div class="count-label">Mins</div></div>
+          <div class="count-box"><div class="count-num" id="seconds">00</div><div class="count-label">Secs</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED SHOWS -->
+    <section class="section" id="shows">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">Tour 2026</span>
+          <h2 class="section-title">Upcoming <em>Shows</em></h2>
+        </div>
+        <div class="shows">
+          <article class="show-card reveal">
+            <div class="date-box"><span class="date-month">Jul</span><span class="date-day">25</span><span class="date-year">2026</span></div>
+            <div class="show-info">
+              <h3 class="show-venue">The Social House — Gold Crest Mall</h3>
+              <div class="show-city-row"><svg class="flag" aria-hidden="true"><use href="#flag-pk"/></svg><span class="show-city">Lahore, PK</span></div>
+            </div>
+            <div class="show-action">
+              <a href="https://ticketwala.pk/event/mirza-ki-mahfil-by-socialites-society-6145" target="_blank" rel="noopener" class="btn btn-primary">Tickets</a>
+            </div>
+          </article>
+
+          <article class="show-card reveal">
+            <div class="date-box"><span class="date-month">Aug</span><span class="date-day">01</span><span class="date-year">2026</span></div>
+            <div class="show-info">
+              <h3 class="show-venue">Venue to be announced</h3>
+              <div class="show-city-row"><svg class="flag" aria-hidden="true"><use href="#flag-pk"/></svg><span class="show-city">Multan, PK</span></div>
+            </div>
+            <div class="show-action"><span class="badge">Coming Soon</span></div>
+          </article>
+
+          <article class="show-card reveal">
+            <div class="date-box"><span class="date-month">Aug</span><span class="date-day">08</span><span class="date-year">2026</span></div>
+            <div class="show-info">
+              <h3 class="show-venue">Venue to be announced</h3>
+              <div class="show-city-row"><svg class="flag" aria-hidden="true"><use href="#flag-pk"/></svg><span class="show-city">Islamabad, PK</span></div>
+            </div>
+            <div class="show-action"><span class="badge">Coming Soon</span></div>
+          </article>
+        </div>
+        <div style="margin-top:1.6rem;" class="reveal">
+          <a href="Mirzakimehfil/" class="btn btn-outline">View Full Schedule →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE / QUOTE -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="feature">
+          <div class="feature-media duo is-interactive reveal">
+            <img src="assets/images/mirza-sing.jpg" width="1100" height="1467" loading="lazy" alt="Random Mirza singing, draped in a traditional shawl under warm light">
+          </div>
+          <div class="reveal">
+            <span class="kicker">What is the Mehfil</span>
+            <blockquote class="feature-quote" style="margin-top:1rem;">
+              Not a concert — a <span class="accent">gathering</span>. Poetry, sound and silence, shared in one warm room.
+            </blockquote>
+            <p class="feature-body">Mirza Ki Mehfil is an intimate live ritual: a draped shawl, a single mic, a circle of listeners on the floor. It is the old idea of the <em>mehfil</em> — an evening of soul — brought back for a new room of people.</p>
+            <div class="feature-sign" aria-hidden="true">محفل</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">From the room</span>
+          <h2 class="section-title">The <em>Mehfil</em></h2>
+        </div>
+        <div class="gallery-grid">
+          <figure class="duo is-interactive tall reveal"><img src="assets/images/mirza-hero.jpg" width="1400" height="1867" loading="lazy" alt="Mirza mid-performance, hand raised in song"></figure>
+          <figure class="duo is-interactive reveal"><img src="assets/images/mirza-mehfil.jpg" width="1100" height="1467" loading="lazy" alt="Mirza seated with a guitarist among hanging artwork"></figure>
+          <figure class="duo is-interactive reveal"><img src="assets/images/crowd-1.jpg" width="1300" height="1733" loading="lazy" alt="A packed room of listeners seated on rugs"></figure>
+          <figure class="duo is-interactive wide reveal"><img src="assets/images/crowd-2.jpg" width="1300" height="975" loading="lazy" alt="The audience watching intently at the mehfil"></figure>
+          <figure class="duo is-interactive reveal"><img src="assets/images/mirza-sing.jpg" width="1100" height="1467" loading="lazy" alt="Mirza singing with eyes closed under warm light"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="section">
+      <div class="wrap">
+        <div class="cta-band reveal">
+          <div class="duo"><img src="assets/images/crowd-1.jpg" width="1300" height="1733" loading="lazy" alt="" aria-hidden="true"></div>
+          <span class="kicker">Don’t miss the room</span>
+          <h2 style="margin-top:0.7rem;">Be part of the mehfil</h2>
+          <p>Lahore opening night is on sale now. The other cities follow — bring someone who needs the evening.</p>
+          <a href="https://ticketwala.pk/event/mirza-ki-mahfil-by-socialites-society-6145" target="_blank" rel="noopener" class="btn btn-primary">Get Tickets</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer style="border-top: none; background: transparent;">
-    <div class="footer-content">
-      <div class="footer-credits">
-        &copy; 2026 Random Mirza. All rights reserved.
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">Mirza Ki Mehfil</div>
+      <div class="socials">
+        <a href="https://www.instagram.com/random_mirza_/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
       </div>
+      <div class="footer-credits">&copy; 2026 Random Mirza. All rights reserved.</div>
     </div>
   </footer>
 
